@@ -356,14 +356,11 @@ body {
   overflow-x: hidden;
 }
 
-page[size="A4"] {
+page {
   background: white;
   display: block;
   margin: 0 auto;
   position: relative;
-
-  width: 210mm;
-  height: 297mm;
 
   /* change this for page margins */
   padding-left: 1.5cm;
@@ -371,6 +368,16 @@ page[size="A4"] {
   padding-top: 1.5cm;
   padding-bottom: 1.5cm;
   overflow: hidden;
+}
+
+page[size="A4"] {
+  width: 210mm;
+  height: 297mm;
+}
+
+page[size="A4-landscape"] {
+  width: 297mm;
+  height: 210mm;
 }
 
 @media print {
@@ -381,10 +388,37 @@ page[size="A4"] {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, td, span, table {
+h1, h2, h3, h4, h5, h6, p, td, span, table, button, label, select {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* user interace styling - don't remove */
+.user-interface {
+  min-width: 200px;
+  background-color: white;
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  border-radius: 10px;
+  padding: 16px;
+  z-index: 1200;
+  box-shadow: 0 0 10px 0 rgba(47, 51, 62, .20);
+}
+
+.user-interface button {
+  width: 100%;
+  background-color: #fadf85;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-interface button:hover {
+  background-color: #f2cd52;
 }
 
 /* PDF Elements - styles which you can adjust 
@@ -435,11 +469,13 @@ h4 {
 table {
   width: 100%;
   border-collapse: collapse;
+  font-weight: 300;
 }
 
 thead {
   text-align: left;
   background-color: #FFECB3;
+  font-weight: bold;
 }
 
 th {
