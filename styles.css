@@ -387,7 +387,7 @@ h1, h2, h3, h4, h5, h6, p, td, span, table {
   margin-bottom: 0;
 }
 
-/* PDF Elements Default Styles - adjustable styles you can adjust them
+/* PDF Elements - styles which you can adjust 
    ========================================================================== */
 
 /* header */
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, p, td, span, table {
   height: 2.5cm;
   position: absolute;
 
-  /* if changing page margins also adjust the posistion of our logo */ 
+  /* if changing page margins also adjust the posistion of the logo */ 
   top: 2cm;
   right: 2cm;
 }
