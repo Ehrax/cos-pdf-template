@@ -1,0 +1,22 @@
+{
+  "name": "cos-pdf-template",
+  "version": "1.0.0",
+  "description": "A simple HTML Boilerplate to generate PDF's out of HTML. Works best with a service running [puppeteer](https://github.com/puppeteer/puppeteer).",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 1000 ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ehrax/cos-pdf-template.git"
+  },
+  "author": "Alexander Rasputin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ehrax/cos-pdf-template/issues"
+  },
+  "homepage": "https://github.com/Ehrax/cos-pdf-template#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
