@@ -3,7 +3,7 @@ A simple HTML Boilerplate to generate PDF's out of HTML. Works best with a servi
 [puppeteer](https://github.com/puppeteer/puppeteer).
 
 ## SETUP
-1. download the lates boilerplate version from [here]()
+1. download the lates boilerplate version from [here](https://github.com/Ehrax/cos-pdf-template/tags)
 2. unzip the file 
 3. open index.html in an text editor of your choice
 4. open index.html with a browser (works best with chrome)
