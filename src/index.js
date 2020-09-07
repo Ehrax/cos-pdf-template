@@ -1,5 +1,3 @@
-const pdfServiceUrl = 'http://localhost:3000/api/create-pdf';
-
 const getLayout = () => document.querySelector('page').getAttribute('size');
 const getHTML = () => fetch('./index.html').then(res => res.text());
 const getCSS = () => {
